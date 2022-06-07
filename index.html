@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+<link rel="stylesheet" href="index.css">
+<meta charset="utf-8"/>
+</head>
+<body>
+  <table>
+    <td>
+      <section id = "section-canvas">
+        <canvas id="canvas" width = 500 height = 500 ></canvas>
+      </section>
+      </td>
+      <td>
+        <section id = "section-menu-global">
+          <button class = "reload-image" onclick="reload()">Load image</button>
+          <a id="download" download = "Eye.png" href="#">Download</a>
+          <br>
+          <section id ="section-menu">
+          <div class="button-menu">
+          <button id = "button-menu-base">Base</button>
+          <button id = "button-menu-center">Center</button>
+          <button id ="button-menu-size">Size</button>
+          </div>
+          <br>
+          <div id = "basic">
+          <h2   text >Basic color</h2>
+          <table class="table-basicColor" style="width:100%">
+            <tbody><tr>
+            <th>Red</th>
+            <th>Green</th>
+            <th>Blue</th>
+            </tr>
+            <tr>
+            <td id="valRed">127</td>
+            <td id="valGreen">127</td>
+            <td id="valBlue">127</td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            <td>
+            <input type="range" id="slideRed" name="slideRed" min="0" max="255">
+            </td>
+            <td>
+            <input type="range" id="slideGreen" name="slideGreen" min="0" max="255">
+            </td>
+            <td>
+            <input type="range" id="slideBlue" name="slideBlue" min="0" max="255">
+            </td>
+            </tr>
+
+            </tbody></table>
+            <div id="change" style="height: 50px; background-color: rgb(127, 127, 127);"></div>
+            <table id="checkboxes" style="width:100%" align="center">
+              <tbody>
+                <td>
+                <input id = "checkbox-red" type="checkbox">
+                <label>Noise on red</label>
+                </td>
+                <td>
+                  <input  id = "checkbox-green"type="checkbox">
+                  <label>Noise on green</label>
+                </td>
+                <td>
+                  <input id = "checkbox-blue" type="checkbox">
+                  <label>Noise on blue</label>
+                </td>
+              </tbody></table>
+            
+          </div>
+
+
+            <div id = "center" hidden>
+              <h2>Center color</h2>
+              <table class="table-centerColor" style="width:100%">
+                <tbody><tr>
+                <th>Red</th>
+                <th>Green</th>
+                <th>Blue</th>
+                </tr>
+                <tr>
+                <td id="valRed-center">127</td>
+                <td id="valGreen-center">127</td>
+                <td id="valBlue-center">127</td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                <td>
+                <input type="range" id="slideRed-center" name="slideRedCenter" min="0" max="255">
+                </td>
+                <td>
+                <input type="range" id="slideGreen-center" name="slideGreenCenter" min="0" max="255">
+                </td>
+                <td>
+                <input type="range" id="slideBlue-center" name="slideBlueCenter" min="0" max="255">
+                </td>
+                </tr>
+                </tbody></table>
+                <div id="changeCenter" style="height: 50px; background-color: rgb(127, 127, 127);"></div>
+                </div>
+                <div id = "menu-size" hidden="hidden">
+                  <table id = "table-menu-size">
+
+                    <tbody>
+                      <tr>
+                        <td>Black circle radius(% of radius)</td>  
+                        <td> <input id = "black-circle-input" type="range" min="0" max="100"></td>
+                        <td id="black-circle-size">50 %</td>
+                      </tr>
+                      <tr>
+                        <td>Center size (% of radius)</td>
+                        <td><input id = "center-limit" type = "range" min="0" max="100"></td>
+                        <td id="center-size">50 %</td>
+                      </tr>
+                      <tr>
+                        <td>third circle size (% of radius)</td>
+                        <td><input id = "third-circle-limit" type = "range" min="0" max="100"></td>
+                        <td id="third-circle-size">50 %</td>
+                      </tr>
+                      <!-- <tr>
+                        <td>Light effect X position (50 is midle of the eye)</td>
+                        <td><input id="Xpos" value="80" type = "range" min="-250" max="250"></td>
+                        <td id="Light-Xpos">80</td>
+                      </tr>
+                      <tr>
+                        <td>Light effect Y position (50 is midle of the eye)</td>
+                        <td><input id="Ypos" value = "-60"type = "range" min="-250" max="250"></td>
+                        <td id="Light-Ypos">-60</td>
+                      </tr>-->
+                    </tbody>
+                  </table>
+                </div>
+
+          </section>
+      </section>
+    </td>
+  </table>
+    
+
+  <script src = "index.js">	</script>
+</body>
+</html>
+

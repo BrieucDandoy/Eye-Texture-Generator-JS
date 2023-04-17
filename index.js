@@ -7,7 +7,7 @@ var changeColorCenter = document.getElementById("changeCenter");
 var sliderRedCenter = document.getElementById("slideRed-center");
 var sliderGreenCenter = document.getElementById("slideGreen-center");
 var sliderBlueCenter = document.getElementById("slideBlue-center");
-
+let test = 2;
 var outputRedCenter = document.getElementById("valRed-center");
 var outputGreenCenter = document.getElementById("valGreen-center");
 var outputBlueCenter = document.getElementById("valBlue-center");
